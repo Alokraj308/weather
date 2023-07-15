@@ -55,4 +55,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
     }
 })
 
-weather.fetchWeather("Patna");
+weather.fetchWeather("bareilly");
