@@ -1,12 +1,13 @@
+import apiKey from './config.js';
+console.log(apiKey)
 let weather = {
-    apiKey: "80e6e552d831a4d1d3bdae019a71c4e6",
     fetchWeather:function(city){
         fetch(
             // "https://api.openweathermap.org/data/2.5/weather?q=patna&appid=80e6e552d831a4d1d3bdae019a71c4e6"
             "https://api.openweathermap.org/data/2.5/weather?q=" 
             +city 
             +"&units=metric&appid=" 
-            +this.apiKey
+            +`${apiKey}`
         )
         .then((response) => {
             if (!response.ok) {
